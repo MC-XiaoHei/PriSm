@@ -1,0 +1,25 @@
+# environment
+.venv/
+__pycache__/
+*.py[cod]
+
+# datasets and build products
+dataset/
+build/
+
+# run records
+runs/
+runs_quant/
+
+# internal documents and host configuration
+docs/
+README.md
+experiments/host.toml
+
+# scratch and reference copies
+attic/
+.ref/
+
+# logs
+*.log
+sweep_logs/

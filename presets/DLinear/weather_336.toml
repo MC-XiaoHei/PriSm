@@ -1,0 +1,22 @@
+[run]
+model = "DLinear"
+train_epochs = 10
+patience = 3
+batch_size = 32
+learning_rate = 0.0001
+lradj = "type1"
+
+[data]
+data = "Weather"
+root_path = "./dataset/weather"
+data_path = "weather.csv"
+features = "M"
+freq = "h"
+
+[model]
+seq_len = 96
+label_len = 48
+pred_len = 336
+freq = "h"
+moving_avg = 25
+individual = false

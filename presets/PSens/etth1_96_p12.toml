@@ -1,0 +1,38 @@
+[run]
+model = "PriSm"
+train_epochs = 10
+patience = 3
+batch_size = 32
+learning_rate = 0.05
+lradj = "type1"
+
+[data]
+data = "ETTh1"
+root_path = "./dataset/ETT-small"
+data_path = "ETTh1.csv"
+features = "M"
+freq = "h"
+
+[model]
+seq_len = 96
+label_len = 48
+pred_len = 96
+freq = "h"
+d_model = 16
+e_layers = 2
+k_l = 5
+k_v = 1
+r_z = 1
+phase_len = 12
+norm_window = 32
+prism_act = "relu"
+prism_global = 1
+prism_local = 1
+prism_point = 1
+prism_skip = 1
+prism_norm = "local"
+prism_norm_floor = 0.1
+prism_norm_min = 0.05
+prism_pow2 = 0
+prism_qat = 0
+prism_act_bits = 0

@@ -1,0 +1,25 @@
+[gw5a25b]
+vendor = "gowin"
+family = "GW5A-25B"
+part = "GW5A-LV25MG121NC1/I0"
+place = 1
+
+[gw5a138c]
+vendor = "gowin"
+family = "GW5A-138C"
+part = "GW5A-LV138UG324AC1/I0"
+place = 1
+route = 0
+
+[gw5a138c.override.tm]
+place = 4
+
+[xc7s25]
+vendor = "xilinx"
+part = "xc7s25csga324-1"
+period = 20.0
+
+[xc7s100]
+vendor = "xilinx"
+part = "xc7s100fgga676-1"
+period = 20.0

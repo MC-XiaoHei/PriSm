@@ -1,0 +1,24 @@
+[run]
+model = "CycleNet"
+train_epochs = 30
+patience = 5
+batch_size = 256
+learning_rate = 0.01
+lradj = "type3"
+
+[data]
+data = "ETTm2"
+root_path = "./dataset/ETT-small"
+data_path = "ETTm2.csv"
+features = "M"
+freq = "t"
+
+[model]
+seq_len = 96
+label_len = 48
+pred_len = 96
+freq = "t"
+cycle = 96
+d_model = 512
+model_type = "linear"
+use_revin = 1
